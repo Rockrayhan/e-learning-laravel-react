@@ -1,16 +1,14 @@
 import React from 'react';
-import Footer from './Shared/Footer';
 import { Link, usePage } from '@inertiajs/react';
-import Header from './Shared/Header';
 import { Col, Nav, Row, Tab } from 'react-bootstrap';
+import FrontendLayout from '@/Layouts/FrontendLayout';
 
-const ProductDetails = ({products,userData, ordered, pending, enrolledCount}) => {
-    const { user, token } = userData;
+const ProductDetails = ({products, ordered, pending, enrolledCount}) => {
     console.log(user.id);
     console.log(products);
     return (
-        <div>
-            <Header userData={userData}></Header>
+        <FrontendLayout>
+            
         <div>
   {/*? slider Area Start*/}
   <section className="slider-area2">
@@ -147,8 +145,7 @@ const ProductDetails = ({products,userData, ordered, pending, enrolledCount}) =>
     </div>
   </section>
 </div>
-<Footer/>
-        </div>
+        </FrontendLayout>
     );
 };
 
