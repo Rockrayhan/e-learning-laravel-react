@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* styles.css */
+.container {
+    @apply mx-auto max-w-screen-xl;
+  }
+
+
+.center {
+    @apply flex justify-center items-center;
+  }
+
+
+/* active link css */
+body{
+    overflow-x: hidden;
+}
+
+.active-link {
+    background-color: aqua;
+    padding: 20px;
+    color: #120F2D ;
+    font-weight: bold;
+}
+
+
+.banner{
+    height: 100vh;
+}
+
+
+.catagories-card{
+    height: 250px;
+    width: 200px;
+}
+
+/* Type Section */
+
+.type-card{
+    height: 60%;
+    
+}
+
+.type-icon{
+    color: brown;
+    height: 20%;
+}
+
+
+/* subscribe  */
+
+.subscribe-section{
+    margin-bottom: -80px;
+    position: relative;
+}
+
+/* page header */
+
+.page-header {
+    background: url('assets/img/page-title.jpg');
+    padding: 90px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    /* filter: blur(10px); Adjust the blur radius as needed */
+    background: rgba(3, 31, 66, 0.9);
+}
+
+.page-header-title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+    position: relative; /* Ensure the title is positioned on top of the blurred image */
+    z-index: 1; 
+}
+
+
+.page-header-cumbread {
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    margin-top: 0;
+    position: relative; /* Ensure the title is positioned on top of the blurred image */
+    z-index: 1; 
+}
+
+/* footer */
+
+.footer {
+    background-color: #120F2D;
+    height: 80vh;
+}
+
+.footer-content{
+    bottom: 0;
+}
+
+
