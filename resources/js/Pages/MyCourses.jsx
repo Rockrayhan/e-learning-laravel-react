@@ -60,6 +60,7 @@ const MyCourses = ({ userData, products }) => {
     products.map( item=>          
     <div className="col-lg-4">
     <div className="properties properties2 mb-30 ">
+    <Link href={'/productDetails/' + item.product_id}>
     <div className="properties__card">
     <div className="properties__img overlay1">
     <a href="#"><img 
@@ -72,7 +73,7 @@ const MyCourses = ({ userData, products }) => {
     <div className="properties__caption">
     <p>  </p>
     
-    <h3><Link href={'/productDetails/' + item.product_id}>{item.product_name}</Link></h3>
+    <h3>{item.product_name}</h3>
     <p>
     {item.description}
     </p>
@@ -91,9 +92,10 @@ const MyCourses = ({ userData, products }) => {
     <span>${item.price} </span>
     </div>
     </div>
-    <a href="#" className="border-btn border-btn2">Find out more</a>
+    <a href="#" className="border-btn border-btn2"> Open Course </a>
     </div>
     </div>
+    </Link>
     </div> 
     </div>
     

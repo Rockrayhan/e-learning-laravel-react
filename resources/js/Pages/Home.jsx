@@ -41,7 +41,7 @@ const Home = (props) => {
   <section className="slider-area ">
     <div className="slider-active">
       {/* Single Slider */}
-      <div className="single-slider slider-height d-flex align-items-center">
+      <div className="single-slider d-flex align-items-center  py-20 ">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-7 col-md-12">

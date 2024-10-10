@@ -46,25 +46,25 @@ class HomeController extends Controller
     }
     
 
-    public function about()
-    {
-        return Inertia::render('About');
-    
-    }
-
-
-
     // public function about()
     // {
-    //     $user = Auth::guard('student')->user() ?? '';
-    //     $token = csrf_token();
-    //     $userData = [
-    //         'user' => $user,
-    //         'token' => $token,
-    //     ];
-    //     return Inertia::render('About', compact('userData'));
+    //     return Inertia::render('About');
     
     // }
+
+
+
+    public function about()
+    {
+        $user = Auth::guard('student')->user() ?? '';
+        $token = csrf_token();
+        $userData = [
+            'user' => $user,
+            'token' => $token,
+        ];
+        return Inertia::render('About', compact('userData'));
+    
+    }
 
 
 
