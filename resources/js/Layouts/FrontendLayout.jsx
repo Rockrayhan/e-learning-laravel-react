@@ -1,5 +1,6 @@
-import Footer from '@/Pages/Shared/Footer';
+
 import Header from '@/Pages/Shared/Header';
+import Footer from '@/Pages/Shared/Footer';
 import { usePage } from '@inertiajs/react';
 import React from 'react';
 
@@ -13,7 +14,7 @@ const FrontendLayout = ({ children }) => {
         <div>
 <Header userData={userData} ></Header>
 
-        <main>
+        <main class="main" id="top">
     {children}
         </main>
 

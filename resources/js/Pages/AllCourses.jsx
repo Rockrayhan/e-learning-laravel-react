@@ -1,20 +1,17 @@
 import React from 'react';
-import Header from './Shared/Header';
-import Footer from './Shared/Footer';
 import { Link } from '@inertiajs/react';
+import FrontendLayout from '@/Layouts/FrontendLayout';
 
-const AllCourses = ({ userData, products, categories, enrollMsg }) => {
-    const { user, token } = userData;
+const AllCourses = ({ products, categories, enrollMsg }) => {
+    
 
     const CategoryName = (id) => {
         const category = categories.find(cat => cat.id === id);
         return category ? category.name : 'Unknown Category';
     };
     return (
-        <div>
+        <FrontendLayout>
                     
-            <Header userData={userData}></Header>
-
 
             {
             enrollMsg && <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -282,8 +279,8 @@ products.map( item=>
 
                     
 
-            <Footer></Footer>
-        </div>
+            
+        </FrontendLayout>
     );
 };
 

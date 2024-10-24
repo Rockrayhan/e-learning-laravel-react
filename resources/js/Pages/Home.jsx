@@ -1,8 +1,14 @@
 import { Link, usePage } from '@inertiajs/react';
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import Footer from './Shared/Footer';
 import FrontendLayout from '@/Layouts/FrontendLayout';
+import Banner from '@/Components/Banner';
+import AboutCounter from '@/Components/AboutCounter';
+import Catagories from '@/Components/Catagories';
+import Types from '@/Components/Types';
+import Courses from '@/Components/Courses';
+import TopInstructors from '@/Components/About/TopInstructors';
+import Testimonial from '@/Components/Testimonial';
+import Subscribe from '@/Components/Subscribe';
 
 
 
@@ -35,8 +41,18 @@ const Home = (props) => {
           </button>
         </div>
         }
+<div>
 
+        <Banner></Banner>
+        <AboutCounter></AboutCounter>
+        <Catagories></Catagories>
+        <Types></Types>
+        {/* <Courses></Courses> */}
+        <TopInstructors></TopInstructors>
+        {/* <Testimonial></Testimonial> */}
+        <Subscribe></Subscribe>
 
+<<<<<<< HEAD
   {/*? slider Area Start*/}
   <section className="slider-area ">
     <div className="slider-active">
@@ -400,41 +416,12 @@ const Home = (props) => {
     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
   </svg>
 ))}
+=======
+>>>>>>> e6d8c42e2c42fce7fc22546c429df768666f9542
 </div>
-              <h3> {studentName(item.student_id)} </h3>
-            </div>
-          </div>  )
-        }
 
-      </OwlCarousel>
-    </div>
-  </section>
-  {/* Services End */}
-  {/*? About Area-2 Start */}
-  <section className="about-area2 fix pb-padding">
-    <div className="support-wrapper align-items-center">
-      <div className="right-content2">
-        {/* img */}
-        <div className="right-img">
-          <img src="assets/img/gallery/about2.png" alt />
-        </div>
-      </div>
-      <div className="left-content2">
-        {/* section tittle */}
-        <div className="section-tittle section-tittle2 mb-20">
-          <div className="front-text">
-            <h2 className>Take the next step
-              toward your personal
-              and professional goals
-              with us.</h2>
-            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
-            <a href="#" className="btn">Join now for Free</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* About Area End */}
+
+
 </div>
 </FrontendLayout>
 
