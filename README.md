@@ -2,7 +2,7 @@
 
 ## Technologies : Laravel - React
 
-### Live Site: https://rayhan.wdpf55.com/
+### Live Site: https://lms.wdpf55.xyz/
 
 
 #### Database: ( db seed isn't available yet ) Please import the Database from : Database > laravel-e-learning.sql 
